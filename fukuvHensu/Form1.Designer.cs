@@ -36,23 +36,25 @@ namespace fukuvHensu
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(102, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "(｀・ω・´)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(611, 215);
+            this.button1.Location = new System.Drawing.Point(425, 217);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 60);
+            this.button1.Size = new System.Drawing.Size(51, 44);
             this.button1.TabIndex = 3;
             this.button1.Text = "↑";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@ namespace fukuvHensu
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(699, 294);
+            this.button2.Location = new System.Drawing.Point(474, 270);
+            this.button2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 60);
+            this.button2.Size = new System.Drawing.Size(51, 44);
             this.button2.TabIndex = 4;
             this.button2.Text = "→";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@ namespace fukuvHensu
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(518, 294);
+            this.button3.Location = new System.Drawing.Point(370, 270);
+            this.button3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 60);
+            this.button3.Size = new System.Drawing.Size(51, 44);
             this.button3.TabIndex = 5;
             this.button3.Text = "←";
             this.button3.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@ namespace fukuvHensu
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(611, 378);
+            this.button4.Location = new System.Drawing.Point(425, 322);
+            this.button4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 60);
+            this.button4.Size = new System.Drawing.Size(51, 43);
             this.button4.TabIndex = 6;
             this.button4.Text = "↓";
             this.button4.UseVisualStyleBackColor = true;
@@ -93,11 +98,23 @@ namespace fukuvHensu
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(486, 235);
+            this.button5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(68, 26);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "反転";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -105,6 +122,7 @@ namespace fukuvHensu
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "0";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,6 +136,7 @@ namespace fukuvHensu
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button5;
     }
 }
 
